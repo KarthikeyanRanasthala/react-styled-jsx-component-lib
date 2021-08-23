@@ -1,0 +1,19 @@
+{
+  "name": "react-styled-jsx-component-lib",
+  "version": "1.0.0",
+  "description": "A component library using Typescript, React, StyledJSX, PostCSS, and Rollup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarthikeyanRanasthala/react-styled-jsx-component-lib.git"
+  },
+  "author": "Karthikeyan Ranasthala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KarthikeyanRanasthala/react-styled-jsx-component-lib/issues"
+  },
+  "homepage": "https://github.com/KarthikeyanRanasthala/react-styled-jsx-component-lib#readme"
+}
