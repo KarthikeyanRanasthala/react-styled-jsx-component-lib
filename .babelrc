@@ -1,4 +1,7 @@
 {
   "presets": ["@babel/preset-env", "@babel/preset-react"],
-  "plugins": ["styled-jsx/babel", "@babel/plugin-transform-runtime"]
+  "plugins": [
+    ["styled-jsx/babel", { "plugins": ["styled-jsx-plugin-postcss"] }],
+    "@babel/plugin-transform-runtime"
+  ]
 }
