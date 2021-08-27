@@ -2,6 +2,9 @@ import { defineConfig } from "rollup";
 import babel from "@rollup/plugin-babel";
 import typescript from "@rollup/plugin-typescript";
 import postcss from 'rollup-plugin-postcss'
+import pkg from './package.json';
+
+const deps = Object.keys(pkg.peerDependencies);
 
 import { DEFAULT_EXTENSIONS } from "@babel/core";
 
@@ -19,5 +22,5 @@ export default defineConfig({
       extensions: [...DEFAULT_EXTENSIONS, "ts", "tsx"],
     }),
   ],
-  external: ["react", "styled-jsx/style", /@babel\/runtime/],
+  external: id => deps.some(dep => id === dep || id.startsWith(`${dep}/`)),
 });
